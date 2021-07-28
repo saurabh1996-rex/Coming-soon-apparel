@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  We're coming soon
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+    </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <main>
+      <div class="headersection">
+        <img src="images/hero-desktop.jpg" alt="desktop" class="desktop" />
+        <img src="images/hero-mobile.jpg" alt="mobile" class="mobile" />
+      </div>
+      <div class="formsection">
+        <h1>
+          <span>We're <br /></span> coming <br />
+          soon
+        </h1>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form action="" class="form" name="form">
+          <label for="email" class="input">
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+
+            <button type="submit" onclick="validateEmail(document.form.email)">
+              <i class="uil uil-angle-right-b"></i>
+            </button>
+
+            <div class="icon active">
+              <i class="uil uil-exclamation-circle"></i>
+            </div>
+          </label>
+        </form>
+        <div class="error active">
+          <p>Please provide a valid email !</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Saurabh</a>.
+      </p>
+    </footer>
+    <script src="Validate.js"></script>
+  </body>
 </html>
