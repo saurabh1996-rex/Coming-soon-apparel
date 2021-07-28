@@ -104,6 +104,10 @@ body {
           color: #fff;
           border-radius: 3rem;
           transition: all 0.3s ease-in;
+          &:hover{
+            box-shadow: 2px 7px 10px -6px rgba(0,0,0,0.55);
+
+          }
         }
 
         .icon {
@@ -160,7 +164,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     header {
       position: absolute;
@@ -191,11 +195,11 @@ body {
         .form {
           .input {
             #email {
-              // width: 80%;
+              width: 80%;
             }
           }
           .icon{
-            right: 10%;
+            right: 15%;
           }
         }
       }

@@ -144,6 +144,11 @@ body main .formsection .form button {
   transition: all 0.3s ease-in;
 }
 
+body main .formsection .form button:hover {
+  -webkit-box-shadow: 2px 7px 10px -6px rgba(0, 0, 0, 0.55);
+          box-shadow: 2px 7px 10px -6px rgba(0, 0, 0, 0.55);
+}
+
 body main .formsection .form .icon {
   font-size: 2rem;
   color: var(--Soft-Red);
@@ -225,7 +230,7 @@ body footer .attribution a {
   color: var(--Desaturated-Red);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body header {
     position: absolute;
     left: 8.5rem;
@@ -256,8 +261,11 @@ body footer .attribution a {
     padding: 10rem;
     text-align: left;
   }
+  body main .formsection .form .input #email {
+    width: 80%;
+  }
   body main .formsection .form .icon {
-    right: 10%;
+    right: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
