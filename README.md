@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/saurabh1996-rex/Coming-soon-apparel)
+- Live Site URL: [Live Site](https://saurabh1996-rex.github.io/Coming-soon-apparel/)
 
 ## My process
 
